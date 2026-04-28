@@ -1,0 +1,13 @@
+body{margin:0;font-family:Arial,sans-serif;background:#0b1220;color:#e5e7eb}
+main{max-width:1080px;margin:0 auto;padding:24px}
+.card{background:#111827;border:1px solid #374151;border-radius:12px;padding:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px;margin-bottom:12px}
+label{display:block;margin:8px 0 4px}
+input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #374151;background:#0b1220;color:#e5e7eb}
+.row{display:flex;gap:8px;align-items:center;margin-top:8px}
+button{border:0;border-radius:8px;padding:10px 12px;cursor:pointer}
+.primary{background:#10b981;color:#052e2b}.warn{background:#ef4444;color:#fff}
+.muted{color:#9ca3af}.badge{padding:2px 8px;border-radius:999px;font-size:12px}
+.progress-wrap{text-align:center}.progress{--val:0;width:180px;height:180px;border-radius:50%;margin:8px auto;display:grid;place-items:center;background:conic-gradient(#22c55e calc(var(--val)*1%),#374151 0)}
+.progress span{background:#0b1220;border-radius:50%;width:130px;height:130px;display:grid;place-items:center;font-weight:bold}
+ul{margin:0;padding-left:18px}
