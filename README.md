@@ -117,3 +117,4 @@ Faça este checklist:
 4. Após deploy bem-sucedido, aguarde ~1-3 minutos e recarregue:
    `https://<seu-usuario>.github.io/<seu-repositorio>/`
 5. Se ainda der 404, execute manualmente o workflow em **Actions → Deploy FunCultura Preview to GitHub Pages → Run workflow**.
+6. Se o erro mencionar `Get Pages site failed`, confirme que o workflow está usando `actions/configure-pages` com `enablement: true` (já aplicado neste repositório).
