@@ -95,7 +95,7 @@ Se você quiser experimentar online sem instalar nada localmente, este repositó
 
 1. Suba este repositório para o GitHub.
 2. Vá em **Settings → Pages** e em *Build and deployment* selecione **GitHub Actions**.
-3. Faça push para a branch `main` (ou `work`).
+3. Faça push para a branch `main` (deploy automático ocorre no push da `main`).
 4. O workflow `.github/workflows/deploy-pages.yml` publica automaticamente a pasta `web/`.
 
 ### Onde acessar
@@ -117,4 +117,7 @@ Faça este checklist:
 4. Após deploy bem-sucedido, aguarde ~1-3 minutos e recarregue:
    `https://<seu-usuario>.github.io/<seu-repositorio>/`
 5. Se ainda der 404, execute manualmente o workflow em **Actions → Deploy FunCultura Preview to GitHub Pages → Run workflow**.
-6. Se o erro mencionar `Get Pages site failed`, confirme que o workflow está usando `actions/configure-pages` com `enablement: true` (já aplicado neste repositório).
+6. Se o erro mencionar `Get Pages site failed`, habilite o GitHub Pages em **Settings → Pages** com fonte **GitHub Actions** e rode o workflow novamente.
+
+7. Se aparecer `Resource not accessible by integration`, verifique em **Settings → Actions → General → Workflow permissions** se está marcado **Read and write permissions** para o `GITHUB_TOKEN`.
+

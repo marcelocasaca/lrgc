@@ -2,7 +2,7 @@ name: Deploy FunCultura Preview to GitHub Pages
 
 on:
   push:
-    branches: ["**"]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -29,8 +29,6 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
-        with:
-          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
