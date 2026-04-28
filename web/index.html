@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FunCultura Guarulhos — Relator Digital</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main>
+    <h1>FunCultura Guarulhos — Relator Digital</h1>
+    <p class="muted">IA em modo consultivo. Decisão de mérito é humana, paritária e auditável.</p>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Módulo Proponente</h2>
+        <label>Título</label>
+        <input id="titulo" type="text" />
+
+        <label>Segmento (Lei 7.471/2016)</label>
+        <select id="segmento"></select>
+
+        <label>Resumo</label>
+        <textarea id="resumo" rows="6"></textarea>
+
+        <label class="row">
+          <input id="docs" type="checkbox" />
+          Confirmo documentação obrigatória
+        </label>
+
+        <div class="row">
+          <button id="analisar" class="primary">Rodar análise</button>
+          <button id="submeter" class="warn" disabled>Submeter</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Módulo Diretor</h2>
+        <div class="progress-wrap">
+          <div id="progress" class="progress"><span id="score">0%</span></div>
+          <p class="muted" id="hitl">Human-in-the-loop: pendente</p>
+        </div>
+        <p id="status" class="muted">Execute a análise para visualizar o parecer técnico.</p>
+        <p id="disclaimer" class="muted"></p>
+      </article>
+    </section>
+
+    <section class="grid" id="feedback"></section>
+  </main>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
