@@ -2,7 +2,7 @@ name: Deploy FunCultura Preview to GitHub Pages
 
 on:
   push:
-    branches: ["main", "work"]
+    branches: ["**"]
   workflow_dispatch:
 
 permissions:

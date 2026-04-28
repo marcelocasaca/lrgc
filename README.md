@@ -105,3 +105,15 @@ Depois do deploy, a aplicação fica disponível em:
 `https://<seu-usuario>.github.io/<seu-repositorio>/`
 
 Obs.: para este protótipo estático, não é necessário instalar dependências.
+
+
+### Se aparecer erro 404 no GitHub Pages
+
+Faça este checklist:
+
+1. O PR precisa estar **mergeado** (o workflow deve existir na branch do repositório).
+2. Em **Settings → Pages**, selecione **Build and deployment: GitHub Actions**.
+3. Verifique a aba **Actions** e confirme que o job `Deploy FunCultura Preview to GitHub Pages` concluiu com sucesso.
+4. Após deploy bem-sucedido, aguarde ~1-3 minutos e recarregue:
+   `https://<seu-usuario>.github.io/<seu-repositorio>/`
+5. Se ainda der 404, execute manualmente o workflow em **Actions → Deploy FunCultura Preview to GitHub Pages → Run workflow**.
