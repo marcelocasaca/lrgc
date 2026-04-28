@@ -85,3 +85,23 @@ node smoke-test.mjs
 ```
 
 Esse teste valida o motor de análise (score, feedback por cores e red flags) em dois cenários.
+
+
+## Publicar sem instalar (GitHub Pages automático)
+
+Se você quiser experimentar online sem instalar nada localmente, este repositório já inclui workflow de deploy.
+
+### Como ativar
+
+1. Suba este repositório para o GitHub.
+2. Vá em **Settings → Pages** e em *Build and deployment* selecione **GitHub Actions**.
+3. Faça push para a branch `main` (ou `work`).
+4. O workflow `.github/workflows/deploy-pages.yml` publica automaticamente a pasta `web/`.
+
+### Onde acessar
+
+Depois do deploy, a aplicação fica disponível em:
+
+`https://<seu-usuario>.github.io/<seu-repositorio>/`
+
+Obs.: para este protótipo estático, não é necessário instalar dependências.
